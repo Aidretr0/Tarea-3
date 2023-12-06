@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma Elementos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Suma de Elementos en un Arreglo</h1>
+
+    <script>
+        // Crear un arreglo de números enteros
+        const numeros = [5, 10, 15, 20, 25];
+
+        // Calcular la suma de todos los elementos en el arreglo
+        const suma = numeros.reduce((total, numero) => total + numero, 0);
+
+        // Mostrar el resultado
+        document.getElementById("resultado").innerHTML = `La suma de los elementos en el arreglo es: ${suma}`;
+    </script>
+
+    <div id="resultado"></div>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

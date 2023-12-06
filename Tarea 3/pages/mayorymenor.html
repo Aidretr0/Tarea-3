@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor y Menor</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Mayor y Menor Valor en un Arreglo</h1>
+
+    <script>
+        // Crear un arreglo de números enteros
+        const numeros = [5, 10, 15, 20, 25];
+
+        // Encontrar el valor máximo y mínimo en el arreglo
+        const maximo = Math.max(...numeros);
+        const minimo = Math.min(...numeros);
+
+        // Mostrar el resultado
+        document.getElementById("resultado").innerHTML = `El valor máximo en el arreglo es: ${maximo}<br>El valor mínimo en el arreglo es: ${minimo}`;
+    </script>
+
+    <div id="resultado"></div>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

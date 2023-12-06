@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocales</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Función con Parámetros para Contar Carácter en una Frase</h1>
+
+    <script>
+        // Definir una función con parámetros para contar un carácter en una frase
+        function contarCaracter(frase, caracter) {
+            // Utilizar un bucle para contar el número de veces que aparece el carácter
+            let contador = 0;
+            for (let i = 0; i < frase.length; i++) {
+                if (frase[i] === caracter) {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        // Llamar a la función con valores específicos
+        const frase = "Hola, cómo estás?";
+        const caracterBuscado = "o";
+        const resultado = contarCaracter(frase, caracterBuscado);
+
+        // Mostrar el resultado en la consola del navegador
+        console.log(`El carácter "${caracterBuscado}" aparece ${resultado} veces en la frase.`);
+    </script>
+    
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Impuestos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Calculadora de Factura con Impuestos</h1>
+
+    <label for="total">Ingresa el total de la factura:</label>
+    <input type="number" id="total">
+
+    <br>
+
+    <label for="impuestos">Ingresa el porcentaje de impuestos:</label>
+    <input type="number" id="impuestos" placeholder="0-100">
+
+    <br>
+
+    <button onclick="ope.calcularTotal()">Calcular Total</button>
+
+    <div id="resultado"></div>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma Pares</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Suma de Números Pares</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+        // Inicializar la variable de suma
+        let suma = 0;
+
+        // Utilizar un bucle for para sumar los números pares del 1 al 50
+        for (let i = 2; i <= 50; i += 2) {
+            suma += i;
+        }
+
+        // Mostrar el resultado
+        document.getElementById("resultado").innerHTML = `La suma de los números pares del 1 al 50 es: ${suma}`;
+    </script>
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

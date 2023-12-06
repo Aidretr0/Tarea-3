@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Numeros</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Función con Parámetros y Return para Sumar Números</h1>
+
+    <script>
+        // Definir una función con parámetros y return para sumar una lista de números
+        function sumarNumeros(...numeros) {
+            // Utilizar el método reduce para sumar los números
+            const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+            return suma;
+        }
+
+        // Llamar a la función con valores específicos
+        const resultado = sumarNumeros(1, 2, 3, 4, 5);
+
+        // Mostrar el resultado en la consola del navegador
+        console.log(`La suma de los números es: ${resultado}`);
+    </script>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

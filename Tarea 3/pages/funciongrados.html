@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grados</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Función con Return para Convertir Celsius a Fahrenheit</h1>
+
+    <script>
+        // Definir una función con return para convertir Celsius a Fahrenheit
+        function celsiusToFahrenheit(celsius) {
+            // Fórmula de conversión: Fahrenheit = (Celsius * 9/5) + 32
+            return (celsius * 9/5) + 32;
+        }
+
+        // Llamar a la función con un valor específico
+        const temperaturaFahrenheit = celsiusToFahrenheit(25);
+
+        // Mostrar el resultado en la consola del navegador
+        console.log(`25 grados Celsius son ${temperaturaFahrenheit.toFixed(2)} grados Fahrenheit`);
+    </script>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

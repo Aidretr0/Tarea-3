@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma Impar</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+</head>
+<body>
+
+    <h1>Suma de Números Impares</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+        // Inicializar la variable de suma y el primer número impar
+        let suma = 0;
+        let numeroImpar = 1;
+
+        // Utilizar un bucle while para sumar los números impares del 1 al 100
+        while (numeroImpar <= 100) {
+            suma += numeroImpar;
+            numeroImpar += 2; // Incrementar en 2 para pasar al siguiente número impar
+        }
+
+        // Mostrar el resultado
+        document.getElementById("resultado").innerHTML = `La suma de los números impares del 1 al 100 es: ${suma}`;
+    </script>
+
+    <footer>
+        <h6>Todos los derechos reservados - Daniel Soft.</h6>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
